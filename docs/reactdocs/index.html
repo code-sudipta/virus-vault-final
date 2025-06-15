@@ -1,0 +1,2702 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>virus-vault-final 1.0.1 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>virus-vault-final</h3>
+          <div class='mb1'><code>1.0.1</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            spellcheck='false'
+            autocapitalize='off'
+            autocorrect='off'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#appheader'
+                  class="">
+                  AppHeader
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#authentication'
+                  class="">
+                  Authentication
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#saveuser'
+                  class="">
+                  saveUser
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#signup'
+                  class="">
+                  signUp
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#signin'
+                  class="">
+                  signIn
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#changepassword'
+                  class="">
+                  ChangePassword
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#changepassword-1'
+                  class="">
+                  changePassword
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#dashboard'
+                  class="">
+                  Dashboard
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handledownloadfulllog'
+                  class="">
+                  handleDownloadFullLog
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handledownloadfulllog'
+                  class="">
+                  handleDownloadFullLog
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#deleteconfirm'
+                  class="">
+                  DeleteConfirm
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#exit'
+                  class="">
+                  Exit
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#logout'
+                  class="">
+                  Logout
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#logout-1'
+                  class="">
+                  logout
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#openingbanner'
+                  class="">
+                  OpeningBanner
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#quarantine'
+                  class="">
+                  Quarantine
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#fetchfiles'
+                  class="">
+                  fetchFiles
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#confirmdelete'
+                  class="">
+                  confirmDelete
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#scan'
+                  class="">
+                  Scan
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handlejavaoutput'
+                  class="">
+                  handleJavaOutput
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handlestartscan'
+                  class="">
+                  handleStartScan
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handleselectfolder'
+                  class="">
+                  handleSelectFolder
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#settings'
+                  class="">
+                  Settings
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#setdarktheme'
+                  class="">
+                  setDarkTheme
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#setlighttheme'
+                  class="">
+                  setLightTheme
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#sidebarcontent'
+                  class="">
+                  SidebarContent
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#sidebaroptions'
+                  class="">
+                  SidebarOptions
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#updateprofile'
+                  class="">
+                  UpdateProfile
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#updateuser'
+                  class="">
+                  updateUser
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handleprofilepicchange'
+                  class="">
+                  handleProfilePicChange
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#updatesubscription'
+                  class="">
+                  UpdateSubscription
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='appheader'>
+      AppHeader
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>AppHeader component</p>
+<p>This component renders the header section of the sidebar
+and displays the active page name, a bell icon for notifications,
+the user name, and a dropdown menu.</p>
+
+    <div class='pre p1 fill-light mt0'>AppHeader</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>userName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The current user's name
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>userName.userName</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        The rendered header section
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='authentication'>
+      Authentication
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Handles Authentication (Sign Up and Sign In) logic</p>
+
+    <div class='pre p1 fill-light mt0'>Authentication</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.setLogin</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.setUserName</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>setLogin</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</code>
+	    sets the login status
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>setUserName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</code>
+	    sets the username
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>ReactElement</code>:
+        the signup and signin modal
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='saveuser'>
+      saveUser
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Saves a user to the database</p>
+
+    <div class='pre p1 fill-light mt0'>saveUser(user: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>user</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    the user object to be saved
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></code>:
+        a promise that resolves when the user is saved
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='signup'>
+      signUp
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Signs up a user</p>
+
+    <div class='pre p1 fill-light mt0'>signUp</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        nothing
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='signin'>
+      signIn
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Signs in a user</p>
+
+    <div class='pre p1 fill-light mt0'>signIn(): void</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        nothing
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='changepassword'>
+      ChangePassword
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>The ChangePassword component renders a modal asking the user to change their password.
+The component renders a form with input fields for the current password, new password, and confirm password.
+It also includes two buttons, one for saving the new password and one for closing the modal.
+The component uses the useState hook to keep track of the values of the input fields.
+The component also uses the useEffect hook to update the password in the local storage and database.
+The component renders a toast message if the password is successfully changed, or if there is an error.</p>
+
+    <div class='pre p1 fill-light mt0'>ChangePassword</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>setPasswordVisible</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</code>
+	    Function to update the visibility of the password change modal
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>setPasswordVisible.setPasswordVisible</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        The rendered ChangePassword component
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='changepassword-1'>
+      changePassword
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Changes the user's password</p>
+
+    <div class='pre p1 fill-light mt0'>changePassword</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        nothing
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='dashboard'>
+      Dashboard
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Dashboard component</p>
+<p>This component displays the main dashboard of the application, including:</p>
+<ul>
+<li>Status cards for protection, scan, and updates.</li>
+<li>Buttons for managing protection, viewing scan history, and checking for updates.</li>
+<li>A modal dialog for updating subscriptions.</li>
+<li>Links to perform full or quick scans.</li>
+<li>A section displaying recent security activity.</li>
+</ul>
+<p>It also includes a function to download the full log of scan activities.</p>
+
+    <div class='pre p1 fill-light mt0'>Dashboard</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        The rendered dashboard component
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handledownloadfulllog'>
+      handleDownloadFullLog
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Downloads the full log of scan activities to a file named "virus-vault-log.txt".</p>
+<p>This function calls the getFullLog function from the fileAPI to retrieve the
+log contents.  If the call is successful, it creates a blob from the log
+contents and creates an "a" element to download the blob as a file.  If the
+call fails, it displays an alert with the error message.</p>
+
+    <div class='pre p1 fill-light mt0'>handleDownloadFullLog</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handledownloadfulllog'>
+      handleDownloadFullLog
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Downloads the full log of scan activities to a file named "virus-vault-log.txt".</p>
+<p>This function calls the getFullLog function from the fileAPI to retrieve the
+log contents.  If the call is successful, it creates a blob from the log
+contents and creates an "a" element to download the blob as a file.  If the
+call fails, it displays an alert with the error message.</p>
+
+    <div class='pre p1 fill-light mt0'>handleDownloadFullLog</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='deleteconfirm'>
+      DeleteConfirm
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>DeleteConfirm is a modal component that asks the user to confirm
+deletion of selected files in the Quarantine component.</p>
+
+    <div class='pre p1 fill-light mt0'>DeleteConfirm</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.onConfirm</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.onCancel</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>onConfirm</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    function to be called when the user
+confirms deletion
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>onCancel</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    function to be called when the user
+cancels deletion
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>ReactElement</code>:
+        the rendered modal component
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='exit'>
+      Exit
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Exit component</p>
+<p>This component renders a modal with a sad emoji icon, a message
+asking if the user wants to exit, and two buttons for user
+interaction. The "Yes" button is styled with a tertiary color
+and changes to pink on hover, while the "No" button is styled
+with a secondary color and changes to teal on hover.</p>
+
+    <div class='pre p1 fill-light mt0'>Exit</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        The rendered modal component
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='logout'>
+      Logout
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Logout component</p>
+<p>This component renders a modal asking the user if they want to log out.
+It includes a sad emoji icon, a message, and two buttons for user interaction.
+The "Yes" button will log the user out by removing the user data from localStorage
+and setting the login state to false. The "No" button will close the modal
+by setting the logout visibility state to false.</p>
+
+    <div class='pre p1 fill-light mt0'>Logout</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    Component properties
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.setLogin</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a></code>
+  </td>
+  <td class='break-word'><span>Function to update the login state
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.setLogoutVisible</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a></code>
+  </td>
+  <td class='break-word'><span>Function to update the visibility of the logout modal
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        The rendered logout modal component
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='logout-1'>
+      logout
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Logs the user out by removing the user data from localStorage and setting the login state to false</p>
+
+    <div class='pre p1 fill-light mt0'>logout</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        nothing
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='openingbanner'>
+      OpeningBanner
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>OpeningBanner</p>
+<p>This component renders the opening banner of the application and displays the application name and a loading bar
+that fills up to 100% in ~3 seconds.</p>
+
+    <div class='pre p1 fill-light mt0'>OpeningBanner</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        The rendered opening banner
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='quarantine'>
+      Quarantine
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Quarantine is a React component that displays files that have been
+quarantined due to detected threats. It provides a user interface
+to view the list of quarantined files and delete selected files.</p>
+<p>The component fetches the list of quarantined files from a specified
+directory on mount and displays them in a data table. Users can select
+files to delete, triggering a confirmation modal before proceeding
+with deletion.</p>
+<p>State:</p>
+<ul>
+<li>files: Array of file objects representing the quarantined files.</li>
+<li>selectedFiles: Array of file objects currently selected for deletion.</li>
+<li>rowClick: Boolean indicating if row click selection mode is enabled.</li>
+<li>showModal: Boolean indicating if the delete confirmation modal is visible.</li>
+</ul>
+<p>Effects:</p>
+<ul>
+<li>Fetches files from the quarantine directory on initial render.</li>
+</ul>
+<p>Interactions:</p>
+<ul>
+<li>Users can select files to delete and confirm deletion through a modal.</li>
+<li>Deletion updates the list of files and clears the selection.</li>
+</ul>
+
+    <div class='pre p1 fill-light mt0'>Quarantine</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='fetchfiles'>
+      fetchFiles
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Fetches the list of files from the quarantine directory and updates the component state.</p>
+
+    <div class='pre p1 fill-light mt0'>fetchFiles</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;void></code>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='confirmdelete'>
+      confirmDelete
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Deletes the selected files and updates the list of files and selected files in the component state.</p>
+
+    <div class='pre p1 fill-light mt0'>confirmDelete</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;void></code>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='scan'>
+      Scan
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Scan component that manages the scanning of a selected folder for threats.
+Provides UI for folder selection, scanning initiation, and displays scan results.</p>
+
+    <div class='pre p1 fill-light mt0'>Scan</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>setDisabled</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</code>
+	    Function to set the disabled state of UI components.
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>setDisabled.setDisabled</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>ReactElement</code>:
+        The UI for scanning a folder and displaying scan results.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handlejavaoutput'>
+      handleJavaOutput
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Handles output from the Java process. Updates the UI with the output and
+saves the full log when the process exits.</p>
+
+    <div class='pre p1 fill-light mt0'>handleJavaOutput</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>_event</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    unused event object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    the output from the Java process
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;void></code>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handlestartscan'>
+      handleStartScan
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Initiates the scanning process for the selected folder.</p>
+<p>Resets the Java output, sets the scanning state to true, disables UI components,
+and ensures the scan complete status is set to false. Then, triggers the Java
+process to start scanning the selected folder.</p>
+
+    <div class='pre p1 fill-light mt0'>handleStartScan</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handleselectfolder'>
+      handleSelectFolder
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Handles the folder selection process by prompting the user to choose a folder.
+If a folder is selected, it updates the selected folder state and retrieves the
+list of files within the folder to update the files state.
+Displays an error message if folder selection fails.</p>
+
+    <div class='pre p1 fill-light mt0'>handleSelectFolder</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;void></code>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='settings'>
+      Settings
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>The Settings component renders a panel with multiple sections for managing user settings.</p>
+<p>The component includes sections for managing the user profile, changing the password, and updating the subscription.
+Additionally, the component includes a section for managing the app settings, such as enabling dark mode and downloading the full scan log.
+The component also includes an exit button to exit the app.</p>
+<p>The component uses the Dialog component from PrimeReact to render the various sections and options.</p>
+
+    <div class='pre p1 fill-light mt0'>Settings</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;<span class="hljs-title class_">Settings</span> /&gt;</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='setdarktheme'>
+      setDarkTheme
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sets the dark theme for the application by updating the href attribute of the theme-tag and theme-link elements.</p>
+
+    <div class='pre p1 fill-light mt0'>setDarkTheme(): void</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        nothing
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='setlighttheme'>
+      setLightTheme
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sets the light theme for the application by updating the href attribute of the theme-tag and theme-link elements.</p>
+
+    <div class='pre p1 fill-light mt0'>setLightTheme(): void</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        nothing
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='sidebarcontent'>
+      SidebarContent
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>SidebarContent component</p>
+<p>This component renders the sidebar of the application, which includes:</p>
+<ul>
+<li>A logo at the top.</li>
+<li>Navigation options for Home, Scan, Quarantine, Settings, and About Us.</li>
+<li>Each navigation option is highlighted based on the active route.</li>
+<li>A logout button at the bottom that opens a modal for logging out.</li>
+</ul>
+<p>The component uses <code>useLocation</code> to determine the active link.</p>
+
+    <div class='pre p1 fill-light mt0'>SidebarContent</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    Component properties
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.disabled</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>
+  </td>
+  <td class='break-word'><span>Determines if the options and logout button are disabled.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.setLogin</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a></code>
+  </td>
+  <td class='break-word'><span>Function to update the login state.
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        The rendered sidebar component.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='sidebaroptions'>
+      SidebarOptions
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>SidebarOptions component</p>
+<p>This component renders a navigation link with an icon and title.
+It applies styles based on the active state and whether the link
+is disabled, including disabling pointer events and adjusting
+opacity when disabled.</p>
+
+    <div class='pre p1 fill-light mt0'>SidebarOptions</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    Component properties
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.icon</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>The icon class name for display.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.link</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>The route path for the link.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.title</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>The display title of the link.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.active</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>
+  </td>
+  <td class='break-word'><span>Determines if the link is active.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.disabled</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>
+  </td>
+  <td class='break-word'><span>Determines if the link is disabled.
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        The rendered link component.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='updateprofile'>
+      UpdateProfile
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Component for updating the user's profile</p>
+
+    <div class='pre p1 fill-light mt0'>UpdateProfile</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>({setProfileVisible: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>})</code>
+	    properties passed to the component
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.setProfileVisible</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>JSX.Element</code>:
+        the component
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='updateuser'>
+      updateUser
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Updates the user's profile in the database</p>
+
+    <div class='pre p1 fill-light mt0'>updateUser</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        nothing
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handleprofilepicchange'>
+      handleProfilePicChange
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Handles the change in the profile picture input field</p>
+
+    <div class='pre p1 fill-light mt0'>handleProfilePicChange</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>e</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/API/InputEvent">InputEvent</a>)</code>
+	    the input event
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>void</code>:
+        nothing
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='updatesubscription'>
+      UpdateSubscription
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Renders a message indicating that the user's subscription is up to date.
+The component renders a shield icon with a checkmark in the center, and a
+message below the icon indicating that the subscription is up to date.</p>
+
+    <div class='pre p1 fill-light mt0'>UpdateSubscription</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>ReactElement</code>:
+        The rendered component
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>

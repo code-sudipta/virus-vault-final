@@ -1,0 +1,1982 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>virus-vault-final 1.0.1 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>virus-vault-final</h3>
+          <div class='mb1'><code>1.0.1</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            spellcheck='false'
+            autocapitalize='off'
+            autocorrect='off'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#main'
+                  class="">
+                  main
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handle'
+                  class="">
+                  handle
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handle'
+                  class="">
+                  handle
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handle'
+                  class="">
+                  handle
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handle'
+                  class="">
+                  handle
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handle'
+                  class="">
+                  handle
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handle'
+                  class="">
+                  handle
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#createwindow'
+                  class="">
+                  createWindow
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#contextbridge'
+                  class="">
+                  contextBridge
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#exposeinmainworld'
+                  class="">
+                  exposeInMainWorld
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#exposeinmainworld'
+                  class="">
+                  exposeInMainWorld
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#exposeinmainworld'
+                  class="">
+                  exposeInMainWorld
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#runjava'
+                  class="">
+                  runJava
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#onoutput'
+                  class="">
+                  onOutput
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#offoutput'
+                  class="">
+                  offOutput
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#selectfolder'
+                  class="">
+                  selectFolder
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#readfolderfiles'
+                  class="">
+                  readFolderFiles
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#listfiles'
+                  class="">
+                  listFiles
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#deletefiles'
+                  class="">
+                  deleteFiles
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#savelog'
+                  class="">
+                  saveLog
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getfulllog'
+                  class="">
+                  getFullLog
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#ipcmain'
+                  class="">
+                  ipcMain
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#eventon'
+                  class="">
+                  on
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#on'
+                  class="">
+                  on
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#on'
+                  class="">
+                  on
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#on'
+                  class="">
+                  on
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='main'>
+      main
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Main process script for the Electron application.
+Handles window creation, IPC communication, file system operations,
+and integration with the Java backend.</p>
+
+    <div class='pre p1 fill-light mt0'>main</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handle'>
+      handle
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Opens a dialog for the user to select a folder.</p>
+
+    <div class='pre p1 fill-light mt0'>handle</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></code>:
+        The selected folder path.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handle'>
+      handle
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Reads all files in the specified folder.</p>
+
+    <div class='pre p1 fill-light mt0'>handle</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>_event</span> <code class='quiet'>(Electron.IpcMainInvokeEvent)</code>
+	    The IPC event.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>folderPath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The path to the folder.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;{name: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, path: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>}></code>:
+        List of files with names and paths.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handle'>
+      handle
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Lists files in the quarantine directory with metadata.</p>
+
+    <div class='pre p1 fill-light mt0'>handle</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>event</span> <code class='quiet'>(Electron.IpcMainInvokeEvent)</code>
+	    The IPC event.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>quarantinePath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The path to the quarantine directory.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></code>:
+        List of file metadata objects.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handle'>
+      handle
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Deletes the specified files from the file system.</p>
+
+    <div class='pre p1 fill-light mt0'>handle</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>event</span> <code class='quiet'>(Electron.IpcMainInvokeEvent)</code>
+	    The IPC event.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>filePaths</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>)</code>
+	    Array of file paths to delete.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Success status and error message if any.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handle'>
+      handle
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Appends a log entry to the virus-vault-log.txt file.</p>
+
+    <div class='pre p1 fill-light mt0'>handle</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>_event</span> <code class='quiet'>(Electron.IpcMainInvokeEvent)</code>
+	    The IPC event.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>logText</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The log text to save.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Success status and file path or error message.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handle'>
+      handle
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Retrieves the full contents of the virus-vault-log.txt file.</p>
+
+    <div class='pre p1 fill-light mt0'>handle</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Success status and log content or error message.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='createwindow'>
+      createWindow
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Creates a new browser window with specified dimensions and loads the
+application from the local Vite development server. The window is
+configured with context isolation and without Node.js integration
+for improved security. The preload script is specified to enable
+communication between the renderer and main processes.</p>
+
+    <div class='pre p1 fill-light mt0'>createWindow()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='contextbridge'>
+      contextBridge
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Preload script for Electron.
+Exposes secure APIs to the renderer process via contextBridge.
+Provides interfaces for running Java processes, file/folder dialogs,
+file operations, and log management.</p>
+
+    <div class='pre p1 fill-light mt0'>contextBridge</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='exposeinmainworld'>
+      exposeInMainWorld
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Exposes Java runner API to the renderer process.</p>
+<ul>
+<li>runJava: Starts the Java scan process with the selected folder.</li>
+<li>onOutput: Registers a callback for Java process output events.</li>
+<li>offOutput: Removes a previously registered output callback.</li>
+</ul>
+
+    <div class='pre p1 fill-light mt0'>exposeInMainWorld</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='exposeinmainworld'>
+      exposeInMainWorld
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Exposes Electron file/folder and quarantine APIs to the renderer process.</p>
+<ul>
+<li>selectFolder: Opens a dialog to select a folder.</li>
+<li>readFolderFiles: Reads files in a folder.</li>
+<li>listFiles: Lists files in a quarantine folder.</li>
+<li>deleteFiles: Deletes specified files.</li>
+</ul>
+
+    <div class='pre p1 fill-light mt0'>exposeInMainWorld</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='exposeinmainworld'>
+      exposeInMainWorld
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Exposes log file APIs to the renderer process.</p>
+<ul>
+<li>saveLog: Appends a log entry to the log file.</li>
+<li>getFullLog: Retrieves the full contents of the log file.</li>
+</ul>
+
+    <div class='pre p1 fill-light mt0'>exposeInMainWorld</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='runjava'>
+      runJava
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sends a request to start the Java process for scanning.</p>
+
+    <div class='pre p1 fill-light mt0'>runJava(selectedFolder: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>selectedFolder</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The folder to scan.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='onoutput'>
+      onOutput
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Registers a callback for Java process output events.</p>
+
+    <div class='pre p1 fill-light mt0'>onOutput(callback: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    The function to call with output data.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='offoutput'>
+      offOutput
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Removes a previously registered output callback.</p>
+
+    <div class='pre p1 fill-light mt0'>offOutput(callback: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    The callback to remove.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='selectfolder'>
+      selectFolder
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Opens a dialog for the user to select a folder.</p>
+
+    <div class='pre p1 fill-light mt0'>selectFolder(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></code>:
+        The selected folder path.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='readfolderfiles'>
+      readFolderFiles
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Reads the contents of a folder and returns a list of files with their absolute paths and names.</p>
+
+    <div class='pre p1 fill-light mt0'>readFolderFiles(folderPath: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;{name: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, path: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, size: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>folderPath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The path to the folder to read.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;{name: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, path: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, size: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}>></code>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='listfiles'>
+      listFiles
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Reads the contents of a quarantine folder and returns a list of files with metadata.</p>
+
+    <div class='pre p1 fill-light mt0'>listFiles(quarantinePath: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;{name: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, path: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, size: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, lastModified: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>}>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>quarantinePath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The path to the quarantine folder to read.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;{name: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, path: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, size: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, lastModified: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>}>></code>:
+        
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='deletefiles'>
+      deleteFiles
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Deletes the specified files.</p>
+
+    <div class='pre p1 fill-light mt0'>deleteFiles(filePaths: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>filePaths</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>)</code>
+	    Array of file paths to delete.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></code>:
+        Success status and error message if any.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='savelog'>
+      saveLog
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Appends a log entry to the virus-vault-log.txt file.</p>
+
+    <div class='pre p1 fill-light mt0'>saveLog(text: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>text</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The log text to save.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></code>:
+        Success status and file path or error message.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='getfulllog'>
+      getFullLog
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Retrieves the full contents of the virus-vault-log.txt file.</p>
+
+    <div class='pre p1 fill-light mt0'>getFullLog(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>></code>:
+        Success status and log content or error message.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='ipcmain'>
+      ipcMain
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Handles compilation and execution of Java code from the Electron main process.
+Listens for the "run-java" IPC event, compiles all Java files in the current and scanner directories,
+and runs the AntivirusMain class with the selected folder as an argument.
+Sends real-time output and errors back to the renderer process via "java-output" events.</p>
+
+    <div class='pre p1 fill-light mt0'>ipcMain</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='eventon'>
+      on
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>IPC event listener for "run-java".
+Compiles all Java files in the current and scanner directories, then runs the AntivirusMain class.
+Sends compilation and execution output/errors to the renderer process.</p>
+
+    <div class='pre p1 fill-light mt0'>on</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>event</span> <code class='quiet'>(Electron.IpcMainEvent)</code>
+	    The IPC event object.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>selectedFolder</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The folder path to scan, passed as an argument to the Java process.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='on'>
+      on
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sends standard output from the Java process to the renderer.</p>
+
+    <div class='pre p1 fill-light mt0'>on</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Output data from Java process.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='on'>
+      on
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sends standard error from the Java process to the renderer.</p>
+
+    <div class='pre p1 fill-light mt0'>on</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Error data from Java process.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='on'>
+      on
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Sends process exit code to the renderer.</p>
+
+    <div class='pre p1 fill-light mt0'>on</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>code</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    Exit code of the Java process.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
