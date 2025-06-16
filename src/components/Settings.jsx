@@ -25,7 +25,7 @@ const Settings = () => {
   const [profileVisible, setProfileVisible] = useState(false);
   const [exitVisible, setExitVisible] = useState(false);
   const [passwordVisible, setPasswordVisible] = useState(false);
-  const [checked, setChecked] = useState(true);
+  const [checked, setChecked] = useState(localStorage.getItem("theme") === "dark" ? true : false);
 
   /**
    * Sets the dark theme for the application by updating the href attribute of the theme-tag and theme-link elements.
@@ -36,6 +36,7 @@ const Settings = () => {
     document.getElementById("theme-tag").href = "./src/themes/darkTheme.css";
     document.getElementById("theme-link").href =
       "https://unpkg.com/primereact/resources/themes/lara-dark-blue/theme.css";
+      localStorage.setItem('theme', 'dark');
   };
 
   /**
@@ -47,6 +48,7 @@ const Settings = () => {
     document.getElementById("theme-tag").href = "./src/themes/lightTheme.css";
     document.getElementById("theme-link").href =
       "https://unpkg.com/primereact/resources/themes/lara-light-blue/theme.css";
+      localStorage.setItem('theme', 'light');
   };
 
   /**

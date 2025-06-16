@@ -965,3 +965,35 @@ Scanning completed.
 File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\New folder - Copy2.zip
 Scanning completed.
 
+
+
+==================== [16/6/2025, 4:17:47 pm] ====================
+D:\Final Year Project\Folder Containing Virus\New folder
+Starting Antivirus...
+D:\Final Year Project\Folder Containing Virus\New folder
+Starting Antivirus...
+File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\2..png
+File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\2..png
+File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\3.png
+File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\3.png
+File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\New folder - Copy2.zip
+Scanning completed.
+File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\New folder - Copy2.zip
+Scanning completed.
+
+
+
+==================== [16/6/2025, 4:19:38 pm] ====================
+D:\Final Year Project\Folder Containing Virus\New folder
+D:\Final Year Project\Folder Containing Virus\New folder
+Starting Antivirus...
+Starting Antivirus...
+File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\2..png
+File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\2..png
+File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\3.png
+File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\3.png
+File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\New folder - Copy2.zip
+Scanning completed.
+File is clean: D:\Final Year Project\Folder Containing Virus\New folder\New folder - Copy\New folder - Copy2.zip
+Scanning completed.
+
