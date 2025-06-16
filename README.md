@@ -8,6 +8,7 @@ It provides a modern UI for scanning folders, viewing scan results, managing qua
 ## Features
 
 - **Scan Folders:** Select any folder on your system and scan it for threats using the integrated Java backend.
+- **AI-Powered Executable Detection:** Advanced machine learning algorithms analyze executable files (.exe, .dll, .bat, etc.) to detect potential malware and suspicious behavior patterns.
 - **Real-time Output:** View real-time scan progress and results in the app.
 - **Quarantine Management:** List, review, and delete quarantined files.
 - **Log Management:** Save and view detailed scan logs.
@@ -16,11 +17,37 @@ It provides a modern UI for scanning folders, viewing scan results, managing qua
 
 ---
 
+## AI Detection Capabilities
+
+### Executable File Analysis
+- **Static Analysis:** Examines file structure, headers, and metadata without executing the file
+- **Behavioral Pattern Recognition:** Uses machine learning models to identify suspicious code patterns
+- **Heuristic Detection:** Analyzes file characteristics and code signatures to detect zero-day threats
+- **PE (Portable Executable) Analysis:** Deep inspection of Windows executable file formats
+- **Entropy Analysis:** Detects packed or obfuscated malware through entropy calculations
+
+### Supported File Types
+- Windows Executables (.exe)
+- Dynamic Link Libraries (.dll)
+- Batch Files (.bat, .cmd)
+- PowerShell Scripts (.ps1)
+- JavaScript Files (.js, .jse)
+- Visual Basic Scripts (.vbs, .vbe)
+
+### Detection Methods
+- **Signature-based Detection:** Traditional hash-based malware identification
+- **Machine Learning Classification:** AI models trained on malware datasets
+- **Anomaly Detection:** Identifies files that deviate from normal executable patterns
+- **Behavioral Analysis:** Predicts potential malicious actions before execution
+
+---
+
 ## Tech Stack
 
 - **Frontend:** React (with Vite)
 - **Desktop Shell:** Electron
 - **Backend:** Java (for scanning and detection logic)
+- **AI/ML:** Custom machine learning models for executable analysis
 - **IPC:** Electron contextBridge and IPC for secure communication between frontend and backend
 
 ---
@@ -80,6 +107,16 @@ virus-vault-final/
 
 ---
 
+## AI Model Information
+
+The AI detection system uses:
+- **Training Data:** Curated datasets of known malware and benign executables
+- **Model Architecture:** Ensemble of classification algorithms optimized for real-time scanning
+- **Performance:** Low false-positive rates with high detection accuracy
+- **Updates:** Models can be updated independently of the main application
+
+---
+
 ## Documentation
 
 - **Frontend:** JSDoc comments are included in React components.  
@@ -118,3 +155,4 @@ This project is for educational purposes.
 ## Credits
 
 - React, Electron, Java, and open-source libraries used in this project.
+- Machine learning frameworks and malware research datasets used for AI model training.
