@@ -24,5 +24,11 @@
   <body class="bg-[var(--bg-color)]">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Set the theme based on the user's preference
+      const userTheme = localStorage.getItem('theme') || 'dark';
+      document.getElementById('theme-tag').setAttribute('href', `./src/themes/${userTheme}Theme.css`);
+      document.getElementById('theme-link').setAttribute('href', `https://unpkg.com/primereact/resources/themes/lara-${userTheme}-blue/theme.css`);
+    </script>
   </body>
 </html>

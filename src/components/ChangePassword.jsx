@@ -41,6 +41,22 @@ const ChangePassword = ({setPasswordVisible}) => {
       return;
     }
 
+    // Password validation regex:
+    // At least 8 characters
+    // At least one uppercase letter
+    // At least one lowercase letter
+    // At least one number
+    // At least one special character
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+
+    if (!passwordRegex.test(newPassword)) {
+      toast.error(
+        "Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character."
+      );
+      return;
+    }
+
     const user = JSON.parse(localStorage.getItem("user"));
 
     fetch(`${API_URL}/${user.id}`, {
