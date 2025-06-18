@@ -64,7 +64,7 @@ function App() {
             </div>
 
             {/* Main Content */}
-            <div className="bg-[--bg-color] p-8 mt-20">
+            <div className="bg-[--bg-color] p-8 mt-20 h-full">
               <Routes>
                 <Route
                   path="/"
