@@ -105,7 +105,7 @@ const Scan = ({ setDisabled }) => {
 
   if (!selectedFolder) {
     return (
-      <div className="flex flex-col items-center justify-center h-full mt-40">
+      <div className="flex flex-col items-center justify-center h-full">
         <h2 className="text-2xl font-bold mb-6">Select Folder to Scan</h2>
         <button
           onClick={handleSelectFolder}

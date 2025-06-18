@@ -75,7 +75,7 @@ const Settings = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl h-full">
       {/* <!-- Left Illustration --> */}
       <div className="flex items-center justify-center">
         <img src={settings} alt="Settings-rafiki" className="w-full max-w-md" />
