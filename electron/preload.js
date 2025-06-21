@@ -69,6 +69,8 @@ contextBridge.exposeInMainWorld("electronAPI", {
    * @returns {Promise<Object>} Success status and error message if any.
    */
   deleteFiles: (filePaths) => ipcRenderer.invoke("delete-files", filePaths),
+
+  quitApp: () => ipcRenderer.send("quit-app"),
 });
 
 /**

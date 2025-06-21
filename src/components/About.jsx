@@ -13,7 +13,7 @@ const About = () => {
       <span className="text-3xl font-bold text-[var(--myprimary-color)]">
         VIRUS <span className="text-[var(--mytertiary-color)]">VAULT</span>
       </span>
-      <span className="text-lg font-semibold">v1.0.1</span>
+      <span className="text-sm">v1.0.1</span>
 
       {/* Description */}
       <p className="mt-6 max-w-2xl leading-relaxed">

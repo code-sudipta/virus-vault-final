@@ -164,3 +164,7 @@ app.on("window-all-closed", () => {
     app.quit();
   }
 });
+
+ipcMain.on('quit-app', () => {
+  app.quit();
+});

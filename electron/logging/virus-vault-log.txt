@@ -462,3 +462,110 @@ Scanning completed.
 
 
 
+
+
+==================== [19/6/2025, 10:01:04 pm] ====================
+D:\Certificate
+D:\Certificate
+Starting Antivirus...
+Starting Antivirus...
+File is clean: D:\Certificate\SUDIPTA_SAHA_HTML.pdf
+File is clean: D:\Certificate\SUDIPTA_SAHA_HTML.pdf
+File is clean: D:\Certificate\SUDIPTA_SAHA_SPRINGBOOT.pdf
+Scanning completed.
+File is clean: D:\Certificate\SUDIPTA_SAHA_SPRINGBOOT.pdf
+Scanning completed.
+
+
+
+==================== [19/6/2025, 10:24:35 pm] ====================
+D:\Certificate
+
+
+
+==================== [19/6/2025, 10:24:35 pm] ====================
+D:\Certificate
+
+
+
+==================== [19/6/2025, 10:24:35 pm] ====================
+D:\Certificate
+
+
+
+==================== [19/6/2025, 10:24:35 pm] ====================
+D:\Certificate
+
+
+
+==================== [19/6/2025, 10:24:35 pm] ====================
+D:\Certificate
+
+
+
+==================== [19/6/2025, 10:24:35 pm] ====================
+D:\Certificate
+
+
+
+==================== [19/6/2025, 10:24:35 pm] ====================
+D:\Certificate
+
+
+
+==================== [19/6/2025, 10:24:35 pm] ====================
+D:\Certificate
+
+
+
+==================== [19/6/2025, 10:24:35 pm] ====================
+D:\Certificate
+
+
+
+==================== [19/6/2025, 10:24:35 pm] ====================
+D:\Certificate
+
+
+
+==================== [19/6/2025, 10:24:35 pm] ====================
+D:\Certificate
+
+
+
+==================== [19/6/2025, 10:24:35 pm] ====================
+D:\Certificate
+D:\Certificate
+Starting Antivirus...
+Starting Antivirus...
+File is clean: D:\Certificate\SUDIPTA_SAHA_HTML.pdf
+File is clean: D:\Certificate\SUDIPTA_SAHA_HTML.pdf
+File is clean: D:\Certificate\SUDIPTA_SAHA_SPRINGBOOT.pdf
+Scanning completed.
+File is clean: D:\Certificate\SUDIPTA_SAHA_SPRINGBOOT.pdf
+Scanning completed.
+
+
+
+==================== [20/6/2025, 11:05:21 pm] ====================
+D:\Certificate
+
+
+
+==================== [20/6/2025, 11:05:21 pm] ====================
+D:\Certificate
+
+
+
+==================== [20/6/2025, 11:05:21 pm] ====================
+D:\Certificate
+D:\Certificate
+Starting Antivirus...
+Starting Antivirus...
+File is clean: D:\Certificate\SUDIPTA_SAHA_HTML.pdf
+File is clean: D:\Certificate\SUDIPTA_SAHA_HTML.pdf
+File is clean: D:\Certificate\SUDIPTA_SAHA_SPRINGBOOT.pdf
+Scanning completed.
+File is clean: D:\Certificate\SUDIPTA_SAHA_SPRINGBOOT.pdf
+Scanning completed.
+
